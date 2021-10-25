@@ -1,10 +1,9 @@
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Literasi</title>
+
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
@@ -25,15 +24,12 @@
     <div class="page-heading">
         <div class="page-title">
             <div class="row">
-                <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Arsip Surat</h3>
+                <div class="col-12 col-md-6 order-md-1 order-last" style="color:white">
+                    <h3 style="color:white"> Arsip Surat</h3>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Arsip</li>
-                        </ol>
+
                     </nav>
                 </div>
             </div>
@@ -41,9 +37,9 @@
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                Berikut adalah surat-surat yang telah terbit dan diarsipkan<br>
+                    Berikut adalah surat-surat yang telah terbit dan diarsipkan<br>
                     Klik "Lihat" pada kolom aksi untuk menampilkan surat
-                  <br>
+                    <br>
                 </div>
                 <div class="card-body">
                     <?= $this->session->flashdata('message'); ?>
@@ -61,7 +57,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <?php
+                                <?php
                                 $i = 1;
                                 foreach ($surat as $rows) : ?>
                                     <tr>
@@ -70,28 +66,28 @@
                                         <td><?php echo $rows->kategori; ?></td>
                                         <td><?php echo $rows->judul; ?></td>
                                         <td><?php echo $rows->waktu; ?></td>
-                                    <td>
-                                        <a href="<?= base_url(); ?>AdminClient/delete/<?= $rows->id_surat; ?>" class="btn btn-danger" onClick="return confirm('yakin mau hapus');">
-                                            <i class="bi bi-trash" aria-hidden="true"></i></a>
+                                        <td>
+                                            <a href="<?= base_url(); ?>AdminClient/delete/<?= $rows->id_surat; ?>" class="btn btn-danger" onClick="return confirm('yakin mau hapus');">
+                                                <i class="bi bi-trash" aria-hidden="true"></i></a>
                                             <a href="<?php echo site_url(); ?>AdminClient/download/<?= $rows->id_surat; ?>" class="btn btn-warning">
-                                                        <i class="bi bi-download" aria-hidden="true"></i></a>
+                                                <i class="bi bi-download" aria-hidden="true"></i></a>
                                             <a href="<?= base_url(); ?>AdminClient/viewpdf/<?= $rows->id_surat; ?>" class="btn btn-success">
-                                                <i class="bi bi-book" aria-hidden="true"></i></a>    
-                                        </td>    
+                                                <i class="bi bi-book" aria-hidden="true"></i></a>
+                                        </td>
                                     </tr>
                                 <?php endforeach; ?>
                             </tbody>
                         </table>
                         <div class='card-header' style="margin-left:-20px;">
-                        <a class='btn btn-primary' href="<?php echo site_url(); ?>AdminClient/post/">
-                            <i class="fa fa-plus"></i>
-                            <span>
-                                Arsipkan Surat
-                            </span>
-                        </a>
-                        </a>
-                        <br>
-                    </div>
+                            <a class='btn btn-primary' href="<?php echo site_url(); ?>AdminClient/post/">
+                                <i class="fa fa-plus"></i>
+                                <span>
+                                    Arsipkan Surat
+                                </span>
+                            </a>
+                            </a>
+                            <br>
+                        </div>
                     </div>
 
                 </div>
@@ -102,7 +98,7 @@
 
     <footer>
         <div class="footer clearfix mb-0 text-muted">
-            <div class="float-start">
+            <div class="float-start" style="color:white">
                 <p>2021 © Arsip</p>
             </div>
             <div class="float-end">

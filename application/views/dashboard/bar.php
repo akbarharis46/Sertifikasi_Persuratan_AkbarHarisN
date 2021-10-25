@@ -30,7 +30,7 @@
               <a href="index.html">Dashboard</a>
             </div>
             <div class="toggler">
-
+              <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
             </div>
           </div>
         </div>
@@ -38,13 +38,13 @@
           <ul class="menu">
             <li class="sidebar-title">Menu</li>
             <a href="<?php echo site_url(); ?>AdminClient/arsip" class="sidebar-link">
-              <i class="fas fa-user" aria-hidden="true"></i>
+              <i class="bi bi-bookmarks"></i>
               <span>Arsip</span>
             </a>
             </li>
 
             <a href="<?php echo site_url(); ?>AdminClient/about" class="sidebar-link">
-              <i class="fa fa-address-book"></i>
+              <i class="bi bi-person-bounding-box"></i>
               <span>About</span>
             </a>
 
@@ -56,7 +56,7 @@
 
       </div>
     </div>
-    <div id="main" class='layout-navbar'>
+    <div id="main" class='layout-navbar' style="background-color:#7b94ee">
       <header class="mb-3">
         <nav class="navbar navbar-expand navbar-light ">
           <div class="container-fluid">
@@ -68,14 +68,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown me-1">
-                  <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                  </a>
+
 
                 </li>
                 <li class="nav-item dropdown me-3">
-                  <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                  </a>
+
 
                 </li>
               </ul>
